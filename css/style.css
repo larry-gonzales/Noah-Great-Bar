@@ -72,11 +72,11 @@ img {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 70px;
+		height: 4.375rem;
 		width: 100%;
 		background-color: #232b2b;
 		border-bottom: 2px solid #eac92b;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	.nav {
@@ -89,14 +89,14 @@ img {
 		right: 0;
 		left: 0;
 		bottom: 0;
-		height: 60px;
+		height: 3.75rem;
 		margin: auto;
 	}
 
 	/* ===== Address ===== */
 	.address-bar {
 		width: auto;
-		margin-top: 4.375rem;
+		margin-top: 4.375em;
 		background: #eac92b;
 		text-align: center;
 	}
@@ -105,7 +105,7 @@ img {
 		font-weight: 400;
 		font-size: 0.75rem;
 		letter-spacing: 0.063rem;
-		padding: 0.5rem;
+		padding: 0.5em;
 	}
 
 	.address-top a {
@@ -114,7 +114,7 @@ img {
 	}
 
 	.hero-image {
-	    background-image: url("../img/main-image-sm.jpg");
+	    background-image: url("../img/hero-img-small.jpg");
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    background-size: cover;
@@ -123,20 +123,21 @@ img {
 		height: 100vh;
 	}
 	
+	/* Bar hours and phone */
 	.hours-bar {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding: 0.5rem 0;
+		padding: 0.75em 0;
 		background: #eac92b;
 	}
 
 	.hours {
 		font-size: 0.9rem;
 		font-weight: 400;
-		line-height: 1.125rem;
+		line-height: 1.3;
 		letter-spacing: 1px;
 		color: #232b2b;
 	}
@@ -144,22 +145,22 @@ img {
 	.phone-btn {
 		width: 7.5rem;
 		background-color: #232b2b;
-		border-radius: 5rem;
-		margin-top: 0.5rem;
-		padding: 0.25rem 0;
+		border-radius: 5em;
+		margin-top: 0.5em;
+		padding: 0.25em 0;
 	}
 
 	.phone a {
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 19px;
+		line-height: 1.2;
 		letter-spacing: 1px;
 		text-decoration: none;
 		color: #fff;
 	}
 
 	/* ===== Events carousel ===== */
-	.carrousel {
+	.carousel {
 		background: #232b2b;
 		text-align: center;
 		padding: 4em 0;
@@ -169,92 +170,86 @@ img {
 		overflow: hidden;
 	}
 
-	.carrousel h1 {
+	.carousel h1 {
 		font-size: 34px;
 		font-weight: 400;
 		text-transform: uppercase;
-		margin: -45px 40px 18px 40px;
-		padding-bottom: 16px;
+		margin: -2.813rem 2.5rem 1.125rem 2.5rem;
+		padding-bottom: 1rem;
 		color: #fff;
 		border-bottom: 1px solid #eac92b;
 	}
 
-	.carrousel h2 {
+	.carousel h2 {
 		margin: 0;
 		padding: 0;
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 1.35rem;
+		line-height: 1.2;
 		font-weight: 400;
 		text-align: center;
 		color: #fff;
 	}
 
-	.carrousel .slides {
+	.event-caps {
+		text-transform: uppercase;
+	}
+
+	.carousel .slides {
 		width: 400%;
 		left: 0;
 		padding-left: 0;
 		list-style: none;
 		position: relative;
-		-webkit-transition: transform .5s;
-		-moz-transition: transform .5s;
-		-o-transition: transform .5s;
-		transition: transform .5s;
+		transition: transform 500ms;
 	}
 
-	.carrousel .slides li {
+	.carousel .slides div {
 		width: 25%;
 		position: relative;
 		float: left;
 	}
 
-	.carrousel li p {
-		font-size: 16px;
-		line-height: 22px;
+	.carousel div p {
+		font-size: 1rem;
+		line-height: 1.4;
 		font-weight: 400;
 		color: #fff;
-		margin: 15px auto;
+		margin: 0.938em auto;
 		text-align: center;
-		width: 280px;
+		width: 17.5rem;
 	}
 
-	.carrousel .date {
+	.carousel .date {
 		color: #eac92b;
 	}
 
-	.carrousel .slidesNavigation {
+	.carousel .slidesNavigation {
 		display: block;
 		list-style: none;
 		text-align: center;
-		bottom: 1.5em;
-		/*--- Centering trick---*/
-		/* Absolute positioning*/
+		bottom: 1.5rem;
 		position: absolute; 
-		/* Abosulte positioning*/
-		width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+		width: 6.5rem; /* This width is the addition of the width of all the navigations dots - So in this case is 104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
 		left: 50%; /*Centering de element*/
-		margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+		margin-left: -52px; /* adjusting the centering by applying a negative margin of half of the width */
 	}
 
-	.carrousel input {
+	.carousel input {
 		display: none;
 	}
 
-	.carrousel .slidesNavigation label {
+	.carousel .slidesNavigation label {
 		float: left;
 		margin: 6px;
 		display: block;
-		height: 10px;
-		width: 10px;
+		height: 0.625rem;
+		width: 0.625rem;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
 		border: solid 2px #eac92b;
 		font-size: 0;
 	}
 
-	/* You have to repeat this with each slide
-	TODO: make it easier with SCSS
-	25% movement 100/slides-num
-	*/
 	#radio-1:checked ~ .slides {
 		transform: translateX(0%);
 	}
@@ -271,14 +266,14 @@ img {
 		transform: translateX(-75%);
 	}
 
-	.carrousel .slidesNavigation label:hover {
+	.carousel .slidesNavigation label:hover {
 		cursor: pointer;
 	}
-	/* You have to repeat this with each slide/dot */
-	.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
-	.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
-	.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
-	.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+
+	.carousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+	.carousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+	.carousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+	.carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
 		background: #eac92b;
 	}
 
@@ -293,11 +288,12 @@ img {
 		font-weight: 400;
 		text-align: center;
 		text-transform: uppercase;
-		padding: 6px 40px 6px 40px;
+		padding: 0.375rem 2.5rem 0.375rem 2.5rem;
 		background: #eac92b;
 		color: #232b2b;
 		position: sticky;
-		top: 72px;
+		top: 4.5rem;
+		z-index: 1;
 	}
 
 	.section-subhead {
@@ -306,13 +302,13 @@ img {
 		text-transform: uppercase;
 		color: #eac92b;
 		border-bottom: 1px solid #6b7b8c;
-		padding: 0.75rem 1rem;
+		padding: 0.75em 1em;
 	}
 
 	.menu-item-container {
 		display: flex;
 		border-bottom: 1px solid #6b7b8c;
-		padding: 0.75rem 1rem;
+		padding: 0.75em 1em;
 		line-height: 0.6rem;
 	}
 
@@ -368,14 +364,82 @@ img {
 	}
 
 	/* ===== Gallery ===== */
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-		gap: 1.5px 3px;
+	.gallery {
+		position: relative;
 	}
 
-	.grid div img {
+	.gallery-images {
+		position: relative;
+		display: grid;
+		top: 0;
+		left: 0;
+		grid-template-columns: repeat(auto-fill, minmax(9.375rem, 1fr));
+		grid-gap: 3px;
+	}
+
+	.gallery-img {
 		width: 100%;
+  		height: 100%;
+		max-width: 100%;
+	}
+
+	.gallery-img:hover {
+		opacity: 0.7;
+		transition: opacity 250ms ease;
+	}
+
+	.lightboxes {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.lightbox {
+		position: fixed;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.75);
+		z-index: 8;
+		display: none;
+	}
+
+	.lightbox-img {
+		position: relative;
+		width: 90%;
+		max-width: 100%;
+	}
+
+	.credit {
+		font-size: 0.8em;
+		font-style: italic;
+		font-weight: 400;
+		letter-spacing: 0.07rem;
+		color: #fff;
+		margin-top: 1em;
+	}
+
+	a.bold {
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.close {
+		position: absolute;
+		top: -3.75rem;
+		right: 1.25rem;
+		font-size: 2.5rem;
+		text-decoration: none;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.lightbox:target {
+		display: flex;
 	}
 
 	/* ===== About / Our story ===== */
@@ -385,26 +449,26 @@ img {
 	}
 
 	.story-head {
-		font-size: 34px;
+		font-size: 2.125rem;
 		font-weight: 400;
 		text-align: center;
 		text-transform: uppercase;
-		padding: 10px 40px 10px 40px;
+		padding: 0.625em 2.5em 0.625em 2.5em;
 		background: #eac92b;
 		color: #232b2b;
 		position: sticky;
-		top: 72px;
+		top: 4.5rem;
 	}
 
 	.story-text {
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 0.95rem;
+		line-height: 1.5;
 		font-weight: 400;
 		text-align: left;
 		margin: auto;
-		padding: 20px 0;
+		padding: 2.5em 0;
 		width: 80%;
-		max-width: 640px;
+		max-width: 40rem;
 		color: #fff;
 	}
 
@@ -415,7 +479,7 @@ img {
 		align-content: center;
 		background: #6b7b8c;
 		text-align: center;
-		padding: 20px;
+		padding: 1.250rem;
 	}
 
 	input, select, textarea {
@@ -425,12 +489,12 @@ img {
 		font-weight: 400;
 		color: #6b7b8c;
 		line-height: 1.3;
-		padding: .4em 1.4em .3em .8em;
+		padding: 0.4em 1.4em 0.3em 0.8em;
 		width: 80%;
 		box-sizing: border-box;
-		margin: 0.5rem auto;
+		margin: 0.5em auto;
 		border: none;
-		border-radius: .3em;
+		border-radius: 0.3em;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		appearance: none;
@@ -447,12 +511,12 @@ img {
 			linear-gradient(45deg, transparent 50%, #eac92b 50%),
 			linear-gradient(135deg, #eac92b 50%, transparent 50%);
 		background-position:
-			calc(100% - 20px) calc(0.75em + 1px),
-			calc(100% - 15px) calc(0.75em + 1px),
+			calc(100% - 1.250rem) calc(0.75em + 1px),
+			calc(100% - 0.938rem) calc(0.75em + 1px),
 			100% 0;
 		background-size:
-			5px 5px,
-			5px 5px,
+			0.3135em 0.3135em,
+			0.3135em 0.3135em,
 			2.5em 2.5em;
 		background-repeat: no-repeat;
 	}
@@ -467,9 +531,9 @@ img {
 		background: #eac92b;
 		color: #232b2b;
 		border: none;
-		border-radius: 0.8rem;
-		margin-top: 0.75rem;
-		padding: 0.35rem 1rem;
+		border-radius: 0.8em;
+		margin-top: 0.75em;
+		padding: 0.35em 1em;
 		cursor: pointer;
 	}
 
@@ -481,7 +545,7 @@ img {
 
 	footer p {
 		font-size: 13px;
-		line-height: 16px;
+		line-height: 1.2;
 		font-weight: 400;
 		color: #fff;
 		text-align: center;
@@ -489,10 +553,10 @@ img {
 
 	.yellow-text {
 		font-size: 13px;
-		line-height: 16px;
+		line-height: 1.2;
 		font-weight: 400;
 		color: #eac92b;
-		padding-top: 20px;
+		padding-top: 1.25rem;
 		text-align: center;
 	}
 
@@ -506,8 +570,8 @@ img {
 	}
 
 	.instagram, .twitter, .facebook {
-		width: 1.5rem;
-		margin: 8px;
+		width: 1.5em;
+		margin: 0.5em;
 	}
 
 	.phone-btn-bottom {
@@ -521,7 +585,7 @@ img {
 	.mobile-copyright p {
 		font-size: 0.65rem;
 		font-weight: 400;
-		padding-bottom: 90px;
+		padding-bottom: 5.625rem;
 	}
 
 	/* ===== Sticky icon footer ===== */
@@ -529,23 +593,36 @@ img {
 		position: fixed;
 		right: 0;
 		bottom: 0;
-		border-top: 2px solid #eac92b;
+		border-top: 2px solid #6b7b8c;
 	    background-color: #232b2b;
 	    color: #eac92b;
 		width: 100%;
-		padding: 0.5rem 0;
+		padding: 0.5em 0;
+		z-index: 7;
+	}
+
+	.btn {
+		width: 3rem;
+		height: 3rem;
+		color: #232b2b;
+		background: #eac92b;
+		border: 1px;
+		border-radius: 50%;
+		font-size: 0.62rem;
+		font-weight: 700;
+		text-transform: uppercase;
 	}
 
 	.footer-btns {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	.menu-btn, 
 	.drinks-btn,
 	.events-btn,
 	.reserve-btn {
-		width: 50px;
+		width: 3.125rem;
 	}
 
 /* ========================================================
@@ -567,12 +644,13 @@ img {
 	}
 
 	.address-top {
-		padding: 0.5rem;
+		padding: 0.5em;
 	}
 
 	.address-top a {
+		font-size: 0.75rem;
+		line-height: 1.3;
 		font-weight: 700;
-		font-size: 1em;
 	}
 
 	.header {
@@ -585,7 +663,7 @@ img {
 
 	.logo {
 		height: 4rem;
-		padding: 0.25rem;
+		padding: 0.25em;
 	}
 
 	/* ===== Nav Bar ===== */
@@ -602,11 +680,11 @@ img {
 	}
 
 	.nav li {
-		font-size: .75em;
+		font-size: 0.75rem;
 		text-transform: uppercase;
 		display: inline-block;
-		margin: 0 1.563rem;
-		padding: 0.5rem 0;
+		margin: 0 1.563em;
+		padding: 0.5em 0;
 	}
 
 	.nav li a {
@@ -616,11 +694,11 @@ img {
 
 	.section-head {
 		position: sticky;
-		top: 136px;
+		top: 8.5rem;
 	}
 
 	.hero-image {
-		background-image: url('../img/main-image-med.jpg');
+		background-image: url('../img/hero-img-large.jpg');
 		height: 100vh;
 	}
 
@@ -631,8 +709,235 @@ img {
 
 	/* ===== Section headers ===== */
 	.section-head {
-		padding: 8px 40px 8px 40px;
-		top: 128px;
+		padding: 0.5em 2.5em 0.5em 2.5em;
+		top: 8rem;
+	}
+
+	.section-subhead {
+		padding: 0.75em 4.5em;
+	}
+
+	.menu-item-container {
+		padding: 0.75em 4.5em;
+	}
+
+	/* ===== Beer List ===== */
+	.drink-head {
+		font-size: 0.85rem;
+		color: #fff;
+		background-color: #6b7b8c;
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 4.5em;
+	}
+
+	.drink-item-container {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #6b7b8c;
+		padding: 0.75em 4.5em;
+		line-height: 0.6rem;
+	}
+
+	.item, .item-descript, .price, .drink {
+		font-size: 0.9rem;
+	}
+
+	.name {
+		width: 12em;
+	}
+
+	.abv.drink {
+		text-align: right;
+	}
+	
+	/* ===== Gallery ===== */
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
+		gap: 1.5px 3px;
+	}
+
+	.lightbox-img {
+		width: auto;
+		max-width: 35rem;
+	}
+
+	/* ===== About / Our story ===== */
+	.story-container {
+		width: auto;
+		text-align: left;
+	}
+
+	.story-text {
+		font-size: 1rem;
+		line-height: 1.75rem;
+		padding: 0.75em 4.5em;
+	}
+
+	p.top-para {
+		padding-top: 3em;
+	}
+
+	p.bottom-para {
+		padding-bottom: 3em;
+	}
+
+	/* ===== Reservations ===== */
+	.reserve-form {
+		padding: 1.75em;
+	}
+
+	input, select, textarea {
+		font-size: 1rem;
+		line-height: 1.3;
+		padding: 0.4em 1.4em 0.3em 0.8em;
+		width: 50%;
+		margin: 1em auto;
+	}
+
+	.form-submit {
+		font-size: 1rem;
+		font-weight: 700;
+		border-radius: 3em;
+		padding: 0.5em 1.5em;
+	}
+
+	/* ===== Footer and Social Media ===== */
+	footer {
+		padding: 1em;
+	}
+
+	.foot-info, .sticky-footer, .mobile-copyright {
+		display: none;
+	}
+
+	.social {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-icons {
+		padding: 0;
+	}
+
+	.instagram, .twitter, .facebook {
+		width: 2rem;
+		margin: 0 1em 0 0;
+	}
+
+	.copyright {
+		display: block;
+	}
+
+	.phone-btn-bottom {
+		font-size: 1rem;
+		font-weight: 700;
+		display: block;
+		background-color: #eac92b;
+		border-radius: 1em;
+		padding: 0.5em 1.125em;
+		width: 7rem;
+	}
+
+	.phone-btn-bottom a {
+		text-decoration: none;
+		color: #232b2b;
+	}
+}
+
+/* ========================================================
+   Media queries for medium devices - Landscape (901 to 1220) 
+   ======================================================== */
+@media screen and (min-width: 917px) and (max-width: 1220px) {
+	html {
+		scroll-padding-top: 6.25rem;
+	}
+	/* ===== Address Bar ===== */
+	.address-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1.75rem;
+		margin-top: 0;
+		z-index: 4;
+	}
+
+	.address-top {
+		padding: 0.5em;
+	}
+
+	.address-top a {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	.header {
+		position: fixed;
+		top: 1.75rem;
+		height: 4.5rem;
+		border-bottom: 2px solid #eac92b;
+		z-index: 3;
+	}
+
+	.logo {
+		position: absolute;
+		top: 0;
+		left: 0.75rem;
+		right: 100%;
+		height: 4rem;
+		padding: 0.25em;
+	}
+
+	/* ===== Nav Bar ===== */
+	.nav {
+		display: block;
+		position: fixed;
+		top: 3.25rem;;
+		left: 0;
+		right: 0;
+		text-align: right;
+		z-index: 5;	
+	}
+
+	.nav li {
+		font-size: .75rem;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 1.5em;
+		padding: 0.5em 0;
+	}
+
+	.nav li a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.section-head {
+		position: sticky;
+		top: 8.5rem;
+	}
+
+	.hero-image {
+		background-image: url('../img/hero-img-large.jpg');
+		background-position: center;
+		height: 100vh;
+	}
+
+	/* ===== Events carousel ===== */
+	.carrousel {
+		padding: 5em 0;
+	}
+
+	/* ===== Section headers ===== */
+	.section-head {
+		position: sticky;
+		top: 100px;
+		padding: 0.5em 2.5em 0.5em 2.5em;
 	}
 
 	.section-subhead {
@@ -645,7 +950,7 @@ img {
 
 	/* ===== Beer List ===== */
 	.drink-head {
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 		color: #fff;
 		background-color: #6b7b8c;
 		display: flex;
@@ -676,8 +981,13 @@ img {
 	/* ===== Gallery ===== */
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
 		gap: 1.5px 3px;
+	}
+
+	.lightbox-img {
+		width: auto;
+		max-width: 35rem;
 	}
 
 	/* ===== About / Our story ===== */
@@ -689,261 +999,40 @@ img {
 	.story-text {
 		font-size: 1rem;
 		line-height: 1.75rem;
-		padding: 0.75rem 4.5rem;
+		padding: 0.75em 4.5em;
 	}
 
 	p.top-para {
-		padding-top: 3rem;
+		padding-top: 3em;
 	}
 
 	p.bottom-para {
-		padding-bottom: 3rem;
+		padding-bottom: 3em;
 	}
 
 	/* ===== Reservations ===== */
 	.reserve-form {
-		padding: 1.75rem;
-	}
-
-	input, select, textarea {
-		font-size: 1rem;
-		line-height: 1.3;
-		padding: .4em 1.4em .3em .8em;
-		width: 50%;
-		margin: 1rem auto;
-	}
-
-	.form-submit {
-		font-size: 1rem;
-		font-weight: 700;
-		border-radius: 3rem;
-		padding: 0.5rem 1.5rem;
-	}
-
-	/* ===== Footer and Social Media ===== */
-	footer {
-		padding: 1rem;
-	}
-
-	.foot-info, .sticky-footer, .mobile-copyright {
-		display: none;
-	}
-
-	.social {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0;
-		padding: 0;
-	}
-
-	.social-icons {
-		padding: 0;
-	}
-
-	.instagram, .twitter, .facebook {
-		width: 2rem;
-		margin: 0 1rem 0 0;
-	}
-
-	.copyright {
-		display: block;
-	}
-
-	.phone-btn-bottom {
-		font-size: 1rem;
-		font-weight: 700;
-		display: block;
-		background-color: #eac92b;
-		border-radius: 1rem;
-		padding: 0.5rem 1.125rem;
-		width: 7rem;
-	}
-
-	.phone-btn-bottom a {
-		text-decoration: none;
-		color: #232b2b;
-	}
-}
-
-/* ========================================================
-   Media queries for medium devices - Landscape (901 to 1220) 
-   ======================================================== */
-@media screen and (min-width: 917px) and (max-width: 1220px) {
-	html {
-		scroll-padding-top: 6.25rem;
-	}
-	/* ===== Address Bar ===== */
-	.address-bar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 1.75rem;
-		margin-top: 0;
-		z-index: 4;
-	}
-
-	.address-top {
-		padding: 0.5rem;
-	}
-
-	.address-top a {
-		font-weight: 700;
-		font-size: 1em;
-	}
-
-	.header {
-		position: fixed;
-		top: 1.75rem;
-		height: 4.5rem;
-		border-bottom: 2px solid #eac92b;
-		z-index: 3;
-	}
-
-	.logo {
-		position: absolute;
-		top: 0;
-		left: 0.75rem;
-		right: 100%;
-		height: 4rem;
-		padding: 0.25rem;
-	}
-
-	/* ===== Nav Bar ===== */
-	.nav {
-		display: block;
-		position: fixed;
-		top: 3.25rem;;
-		left: 0;
-		right: 0;
-		text-align: right;
-		z-index: 5;	
-	}
-
-	.nav li {
-		font-size: .75em;
-		text-transform: uppercase;
-		display: inline-block;
-		margin: 0 1.5rem;
-		padding: 0.5rem 0;
-	}
-
-	.nav li a {
-		text-decoration: none;
-		color: #fff;
-	}
-
-	.section-head {
-		position: sticky;
-		top: 136px;
-	}
-
-	.hero-image {
-		background-image: url('../img/main-image-med.jpg');
-		height: 100vh;
-	}
-
-	/* ===== Events carousel ===== */
-	.carrousel {
-		padding: 5em 0;
-	}
-
-	/* ===== Section headers ===== */
-	.section-head {
-		position: sticky;
-		top: 100px;
-		padding: 8px 40px 8px 40px;
-	}
-
-	.section-subhead {
-		padding: 0.75rem 10rem;
-	}
-
-	.menu-item-container {
-		padding: 0.75rem 10rem;
-	}
-
-	/* ===== Beer List ===== */
-	.drink-head {
-		font-size: 0.9rem;
-		color: #fff;
-		background-color: #6b7b8c;
-		display: flex;
-		justify-content: space-between;
-		padding: 0.5rem 10rem;
-	}
-
-	.drink-item-container {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 1px solid #6b7b8c;
-		padding: 0.75rem 10rem;
-		line-height: 0.6rem;
-	}
-
-	.item, .item-descript, .price, .drink {
-		font-size: 0.9rem;
-	}
-
-	.name {
-		width: 12rem;
-	}
-
-	.abv.drink {
-		text-align: right;
-	}
-	
-	/* ===== Gallery ===== */
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
-		gap: 1.5px 3px;
-	}
-
-	/* ===== About / Our story ===== */
-	.story-container {
-		width: auto;
-		text-align: left;
-	}
-
-	.story-text {
-		font-size: 1rem;
-		line-height: 1.75rem;
-		padding: 0.75rem 4.5rem;
-	}
-
-	p.top-para {
-		padding-top: 3rem;
-	}
-
-	p.bottom-para {
-		padding-bottom: 3rem;
-	}
-
-	/* ===== Reservations ===== */
-	.reserve-form {
-		padding: 1.75rem;
+		padding: 1.75em;
 	}
 
 	input, select, textarea {
 		font-size: 1rem;
 		line-height: 1.3rem;
-		padding: .4em 1.4em .3em .8em;
+		padding: 0.4em 1.4em 0.3em 0.8em;
 		width: 40%;
-		margin: 1rem auto;
+		margin: 1em auto;
 	}
 
 	.form-submit {
 		font-size: 1rem;
 		font-weight: 700;
-		border-radius: 3rem;
-		padding: 0.5rem 1.5rem;
+		border-radius: 3em;
+		padding: 0.5em 1.5em;
 	}
 
 	/* ===== Footer and Social Media ===== */
 	footer {
-		padding: 1rem;
+		padding: 1em;
 	}
 
 	.foot-info, .sticky-footer, .mobile-copyright {
@@ -964,7 +1053,7 @@ img {
 
 	.instagram, .twitter, .facebook {
 		width: 2rem;
-		margin: 0 1rem 0 0;
+		margin: 0 1em 0 0;
 	}
 
 	.copyright {
@@ -976,8 +1065,8 @@ img {
 		font-weight: 700;
 		display: block;
 		background-color: #eac92b;
-		border-radius: 1rem;
-		padding: 0.5rem 1.125rem;
+		border-radius: 1em;
+		padding: 0.5em 1.125em;
 		width: 7rem;
 	}
 
@@ -1006,13 +1095,14 @@ img {
 	}
 
 	.address-top {
-		padding: 0.75rem;
+		padding: 0.75em;
 		text-decoration: uppercase;
 	}
 
 	.address-top a {
-		font-weight: 700;
 		font-size: 0.9rem;
+		line-height: 1.3;
+		font-weight: 700;
 	}
 
 	.header {
@@ -1029,7 +1119,7 @@ img {
 		left: 0.75rem;
 		right: 100%;
 		height: 4.25rem;
-		padding: 0.25rem;
+		padding: 0.25em;
 	}
 
 	/* ===== Nav Bar ===== */
@@ -1047,8 +1137,8 @@ img {
 		font-size: 1rem;
 		text-transform: uppercase;
 		display: inline-block;
-		margin: 0 1.5rem;
-		padding: 0.34rem 0;
+		margin: 0 1.5em;
+		padding: 0.34em 0;
 	}
 
 	.nav li a {
@@ -1062,11 +1152,12 @@ img {
 
 	.section-head {
 		position: sticky;
-		top: 136px;
+		top: 8.5rem;
 	}
 
 	.hero-image {
-		background-image: url('../img/main-image-lg.jpg');
+		background-image: url('../img/hero-img-large.jpg');
+		background-position: center;
 		height: 100vh;
 	}
 
@@ -1075,56 +1166,60 @@ img {
 		display: flex;
 		flex-direction: row;
 		text-align: center;
-		padding: 0.5rem 0;
+		padding: 0.5em 0;
 	}
 
 	.hours {
 		font-weight: 700;
-		margin-right: 2rem;
+		margin-right: 2em;
 	}
 
 	.phone-btn {
 		width: 8.5rem;
-		border-radius: 5rem;
+		border-radius: 5em;
 		margin-top: 0;
-		margin-right: 2rem;
-		padding: 0.5rem 0;
+		margin-right: 2em;
+		padding: 0.5em 0;
 	}
 
 	/* ===== Events carousel ===== */
-	.carrousel {
+	.container {
 		background: #232b2b;
-		text-align: center;
-		padding: 6rem 0;
-		height: 13.25em;
+		height: 100%;
 		margin: auto;
 		position: relative;
 		overflow: hidden;
 	}
 
-	.carrousel .slides {
-		width: 134%;
-		left: 0;
-		padding-left: 0;
+	.slider {
+		width: 400%;
+		max-width: 50rem;
+		margin: auto;
+		display: flex;
 		list-style: none;
 		position: relative;
-		-webkit-transition: transform .5s;
-		-moz-transition: transform .5s;
-		-o-transition: transform .5s;
-		transition: transform .5s;
+		-webkit-transition: transform 500ms;
+		-moz-transition: transform 500ms;
+		-o-transition: transform 500ms;
+		transition: transform 500ms;
+	}
+
+	.slider section {
+		flex-basis: 100%;
+
 	}
 
 	/* ===== Section headers ===== */
 	.section-head {
 		position: sticky;
-		top: 110px;
-		padding: 8px 40px 8px 40px;
+		top: 6.875rem;
+		padding: 0.5em 2.5rem 0.5em 2.5rem;
 	}
 
 	/* ===== Menu List ===== */
 	.section-subhead, .menu-item-container {
-		padding: 0.75rem 20rem;
-		max-width: 800px;
+		padding: 0.75em 20em;
+		max-width: 50rem;
 		margin: auto;
 	}
 
@@ -1136,7 +1231,7 @@ img {
 		display: flex;
 		justify-content: space-between;
 		padding: 0.5rem 20rem;
-		max-width: 800px;
+		max-width: 50rem;
 		margin: auto;
 	}
 
@@ -1144,8 +1239,8 @@ img {
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 1px solid #6b7b8c;
-		padding: 0.75rem 20rem;
-		max-width: 800px;
+		padding: 0.75em 20em;
+		max-width: 50rem;
 		line-height: 0.6rem;
 		margin: auto;
 	}
@@ -1166,60 +1261,15 @@ img {
 	/* ===== Gallery ===== */
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
 		gap: 1.5px 3px;
 	}
+
+	.lightbox-img {
+		width: auto;
+		max-width: 35rem;
+	}
 	
-	/* .thumbnail:target {
-
-	} */
-
-	/* .thumbnail:hover {
-		transform: scale(0.9,0.9);
-		transition: 0.5s;
-	}
-
-	.gallery-lightbox {
-		background-color: rgba(0,0,0,0.8);
-		width: 100vw;
-		height: 100vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		z-index: 10;
-		display: none;
-	}
-
-	.gallery-lightbox:target{
-		display: flex;
-	}
-
-	.gallery-full {
-		position: relative;
-	}
-
-	.close {
-		position: absolute;
-		width: 2em;
-		height: 2em;
-		background-color: #000;
-		top: 0;
-		right: 0;
-		border-radius: 50%;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		top: -2em;
-		right: -2em;
-	}
-
-	.close::after {
-		content: "X";
-		color: #eac92b;
-		font-weight: 700;
-	} */
-
 	/* ===== About / Our story ===== */
 	.story-container {
 		width: auto;
@@ -1229,20 +1279,13 @@ img {
 	.story-text {
 		font-size: 1rem;
 		line-height: 1.75rem;
-		padding: 0.75rem 4.5rem;
-	}
-
-	p.top-para {
-		padding-top: 3rem;
-	}
-
-	p.bottom-para {
-		padding-bottom: 3rem;
+		padding: 3em 0;
+		max-width: 50rem;
 	}
 
 	/* ===== Reservations ===== */
 	.reserve-form {
-		padding: 1.75rem;
+		padding: 1.75em;
 	}
 
 	input, select, textarea {
@@ -1250,20 +1293,20 @@ img {
 		line-height: 1.3;
 		padding: .4em 1.4em .3em .8em;
 		width: 30%;
-		max-width: 400px;
-		margin: 1rem auto;
+		max-width: 25rem;
+		margin: 1em auto;
 	}
 
 	.form-submit {
 		font-size: 1rem;
 		font-weight: 700;
-		border-radius: 3rem;
-		padding: 0.5rem 1.5rem;
+		border-radius: 3em;
+		padding: 0.5em 1.5em;
 	}
 
 	/* ===== Footer and Social Media ===== */
 	footer {
-		padding: 1rem;
+		padding: 1em;
 	}
 
 	.foot-info, .sticky-footer, .mobile-copyright {
@@ -1283,8 +1326,8 @@ img {
 	}
 
 	.instagram, .twitter, .facebook {
-		width: 2rem;
-		margin: 0 1rem 0 0;
+		width: 2em;
+		margin: 0 1em 0 0;
 	}
 
 	.copyright {
@@ -1296,9 +1339,9 @@ img {
 		font-weight: 700;
 		display: block;
 		background-color: #eac92b;
-		border-radius: 1rem;
-		padding: 0.5rem 1.125rem;
-		width: 7rem;
+		border-radius: 1em;
+		padding: 0.5em 1.125em;
+		width: 7em;
 	}
 
 	.phone-btn-bottom a {
