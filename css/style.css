@@ -703,6 +703,11 @@ img {
 	}
 
 	/* ===== Events carousel ===== */
+	.carousel h1 {
+		margin: -2.5rem auto 1.125rem auto;
+		max-width: 39rem;
+	}
+
 	.carrousel {
 		padding: 5em 0;
 	}
@@ -752,10 +757,9 @@ img {
 	}
 	
 	/* ===== Gallery ===== */
-	.grid {
+	.gallery-images {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
-		gap: 1.5px 3px;
+		grid-template-columns: repeat(auto-fill, minmax(10rem, 3fr));
 	}
 
 	.lightbox-img {
@@ -929,6 +933,11 @@ img {
 	}
 
 	/* ===== Events carousel ===== */
+	.carousel h1 {
+		margin: -2.5rem auto 1.125rem auto;
+		max-width: 55rem;
+	}
+
 	.carrousel {
 		padding: 5em 0;
 	}
@@ -979,10 +988,9 @@ img {
 	}
 	
 	/* ===== Gallery ===== */
-	.grid {
+	.gallery-images {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
-		gap: 1.5px 3px;
+		grid-template-columns: repeat(auto-fill, minmax(11rem, 3fr));
 	}
 
 	.lightbox-img {
@@ -1183,6 +1191,11 @@ img {
 	}
 
 	/* ===== Events carousel ===== */
+	.carousel h1 {
+		margin: -2.5rem auto 1.125rem auto;
+		max-width: 50rem;
+	}
+
 	.container {
 		background: #232b2b;
 		height: 100%;
@@ -1259,15 +1272,22 @@ img {
 	}
 	
 	/* ===== Gallery ===== */
-	.grid {
+	#gallery {
+		background: #232b2b;
+	}
+
+	.gallery-images {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(12.5rem, 3fr));
-		gap: 1.5px 3px;
+		gap: 3px;
+		margin: 0 auto;
+		max-width: 90rem;
+		background: #fff;
 	}
 
 	.lightbox-img {
 		width: auto;
-		max-width: 35rem;
+		max-width: 40rem;
 	}
 	
 	/* ===== About / Our story ===== */
